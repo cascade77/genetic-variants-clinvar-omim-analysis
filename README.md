@@ -42,8 +42,8 @@ One pathogenic variant was selected per disease from ClinVar (GRCh38). Each vari
 | ALS | NC_000021.9:g.31659614G>C | SOD1 | SNV |
 | Ellis-van Creveld | NM_147127.5(EVC2):c.122C>A (p.Pro41His) | EVC2 | SNV |
 
+<img width="777" height="462" alt="image" src="https://github.com/user-attachments/assets/e1f5f7e9-55cb-4930-9f26-1eca4dcbff87" />
 
-<img width="777" height="473" alt="image" src="https://github.com/user-attachments/assets/b32800ed-0dd1-426a-b672-a304ab5a89de" />
 <img width="782" height="695" alt="image" src="https://github.com/user-attachments/assets/357f6fc7-7cbb-4da3-8b96-0365c1bfb70e" />
 
 ---
