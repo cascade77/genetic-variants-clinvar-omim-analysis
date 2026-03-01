@@ -97,16 +97,41 @@ Each variant was classified using ACMG/AMP guidelines and compiled into a VCF fi
 | ALS | BP4 | Likely Benign |
 | Ellis-van Creveld | BP1, BP4 | Benign/Likely Benign |
 
-**SnpEff annotation command:**
+## Variant Annotation Workflow (SnpEff + GRCh38)
+## 1. Update system & install dependencies
+```bash
+sudo apt update && sudo apt upgrade -y
+sudo apt install -y curl wget unzip perl git build-essential default-jre
+```
+## 2. Install Ensembl VEP (optional dependency step used earlier)
+```bash
+wget https://github.com/Ensembl/ensembl-vep/archive/refs/tags/release/116.0.zip
+unzip release_116.0.zip
+cd ensembl-vep-116.0
+perl INSTALL.pl
+```
+## 3. Download SnpEff
+```bash
+cd ~
+wget https://snpeff.blob.core.windows.net/versions/snpEff_latest_core.zip
+unzip snpEff_latest_core.zip
+cd snpEff
+```
+## 4. Download GRCh38 reference database (Ensembl)
 ```bash
 java -jar snpEff.jar download GRCh38.mane.1.0.ensembl
-java -jar snpEff.jar GRCh38.mane.1.0.ensembl variants_annotated.vcf > annotated_output.vcf
 ```
+## 5. Annotate VCF file
+```bash
+java -jar snpEff.jar GRCh38.mane.1.0.ensembl input.vcf > annotated.vcf
+```
+## 6. Example 
+```bash
+java -jar snpEff.jar GRCh38.mane.1.0.ensembl special_fixed.vcf > special_annotated.vcf
+```
+## Output
 
-Open `snpeff_summary.html` in any browser to view the full annotation report.
-
-
----
+special_annotated.vcf → VCF with functional variant annotations added by SnpEff.
 
 ## Tools Used
 
