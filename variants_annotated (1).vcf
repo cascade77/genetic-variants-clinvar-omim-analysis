@@ -1,0 +1,18 @@
+##fileformat=VCFv4.2
+##reference=GRCh38
+##INFO=<ID=GENE,Number=1,Type=String,Description="Gene symbol">
+##INFO=<ID=CONDITION,Number=1,Type=String,Description="Associated condition">
+##INFO=<ID=CLNSIG,Number=1,Type=String,Description="Clinical significance">
+##INFO=<ID=ACMG,Number=.,Type=String,Description="ACMG criteria">
+##SnpEffVersion="5.4a (build 2025-11-25 12:22), by Pablo Cingolani"
+##SnpEffCmd="SnpEff  GRCh38.mane.1.0.ensembl /home/hadia/special_fixed.vcf "
+##INFO=<ID=ANN,Number=.,Type=String,Description="Functional annotations: 'Allele | Annotation | Annotation_Impact | Gene_Name | Gene_ID | Feature_Type | Feature_ID | Transcript_BioType | Rank | HGVS.c | HGVS.p | cDNA.pos / cDNA.length | CDS.pos / CDS.length | AA.pos / AA.length | Distance | ERRORS / WARNINGS / INFO' ">
+##INFO=<ID=LOF,Number=.,Type=String,Description="Predicted loss of function effects for this variant. Format: 'Gene_Name | Gene_ID | Number_of_transcripts_in_gene | Percent_of_transcripts_affected'">
+##INFO=<ID=NMD,Number=.,Type=String,Description="Predicted nonsense mediated decay effects for this variant. Format: 'Gene_Name | Gene_ID | Number_of_transcripts_in_gene | Percent_of_transcripts_affected'">
+#CHROM	POS	ID	REF	ALT	QUAL	FILTER	INFO
+7	117559593	CFTR1	ATG	A	.	PASS	GENE=CFTR;CONDITION=Cystic_fibrosis;CLNSIG=Pathogenic;ACMG=PVS1,PM2,PP3;ANN=A|frameshift_variant|HIGH|CFTR|ENSG00000001626.18|transcript|ENST00000003084.11|protein_coding|11/27|c.1523_1524delTG|p.Phe508fs|1593/6070|1523/4443|508/1480||;LOF=(CFTR|ENSG00000001626.18|1|1.00)
+15	48411041	FBN1_1	N	<DEL>	.	PASS	GENE=FBN1;CONDITION=Marfan_syndrome;CLNSIG=Pathogenic;ACMG=PVS1,PM2,PP1;ANN=<DEL>|frameshift_variant|HIGH|FBN1|ENSG00000166147.15|transcript|ENST00000316623.10|protein_coding|66/66|c.8565delN|p.Ser2855fs|8881/11609|8565/8616|2855/2871||
+X	154947698	F8_1	N	<DEL>	.	PASS	GENE=F8;CONDITION=Hemophilia_A;CLNSIG=Pathogenic;ANN=<DEL>|frameshift_variant&splice_region_variant|HIGH|F8|ENSG00000185010.15|transcript|ENST00000360256.9|protein_coding|13/26|c.2113delN|p.Gly705fs|2284/9032|2113/7056|705/2351||;LOF=(F8|ENSG00000185010.15|1|1.00)
+15	72344107	HEXA_1	T	TTTT	.	PASS	GENE=HEXA;CONDITION=Tay_Sachs_disease;CLNSIG=Pathogenic;ACMG=PVS1,PM2,PP3;ANN=TTTT|disruptive_inframe_insertion|MODERATE|HEXA|ENSG00000213614.11|transcript|ENST00000268097.10|protein_coding|14/14|c.1559_1560insAAA|p.Gly520_Phe521insAsn|1601/4785|1559/1590|520/529||
+21	31659614	SOD1_1	G	C	.	PASS	GENE=SOD1;CONDITION=Amyotrophic_lateral_sclerosis;CLNSIG=Likely_benign;ANN=C|upstream_gene_variant|MODIFIER|SOD1|ENSG00000142168.15|transcript|ENST00000270142.11|protein_coding||c.-156G>C|||||79|,C|intergenic_region|MODIFIER|TIAM1-SOD1|ENSG00000156299.15-ENSG00000142168.15|intergenic_region|ENSG00000156299.15-ENSG00000142168.15|||n.31659614G>C||||||
+4	5708392	EVC2_1	C	A	.	PASS	GENE=EVC2;CONDITION=Ellis_van_Creveld_syndrome;CLNSIG=Likely_benign;ANN=A|missense_variant|MODERATE|EVC2|ENSG00000173040.13|transcript|ENST00000344408.10|protein_coding|1/22|c.122G>T|p.Pro41Leu|168/4382|122/3927|41/1308||WARNING_REF_DOES_NOT_MATCH_GENOME,A|upstream_gene_variant|MODIFIER|EVC|ENSG00000072840.13|transcript|ENST00000264956.11|protein_coding||c.-2989C>A|||||2809|
